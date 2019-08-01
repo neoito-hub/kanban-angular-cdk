@@ -1,0 +1,140 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #ff6e43;
+	/* background-color: #db603bf0; */
+	min-height: 100%;
+	/* overflow: hidden; */
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+		'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+i:hover {
+	cursor: pointer;
+}
+
+textarea:focus {
+	outline: none;
+}
+
+nav {
+	background-color: rgba(0, 0, 0, 0.08);
+	padding: 5px;
+	position: fixed;
+	width: 100%;
+}
+
+.is-home i {
+	background: #c59b8ec4;
+	padding: 3px;
+	border-radius: 3px;
+	margin: 3px;
+	color: white;
+}
+
+/* Nav with project details */
+
+.project-nav {
+	display: flex;
+	justify-content: space-between;
+	height: 40px;
+	position: fixed;
+	color: white;
+	top: 50px;
+	width: 100%;
+	padding: 10px 18px;
+}
+
+.project-nav h2 {
+	font-size: 1.1rem;
+	font-weight: 600;
+}
+
+.project-nav i {
+	font-size: 18px;
+}
+
+/* Board design */
+
+.board-section {
+	display: flex;
+	margin: 5px;
+	position: absolute;
+	top: 5.5rem;
+}
+
+.neo-board {
+	width: 280px;
+	background-color: #dfe1e6;
+	padding: 5px 9px 8px;
+	border-radius: 3px;
+	margin: 3px;
+	height: 100%;
+	position: relative;
+	overflow-y: auto;
+}
+
+.neo-board .board-header {
+	display: flex;
+	align-items: center;
+	margin-bottom: 4px;
+}
+
+.neo-board .board-header input {
+	font-weight: 600;
+	width: calc(100% - 25px);
+	/* border-radius: 3px; */
+	border: 1px solid #dfe1e6;
+	background-color: #dfe1e6;
+	padding: 1px 5px;
+}
+
+.neo-board .board-header input:focus {
+	background-color: white;
+}
+
+.neo-board .board-header input:hover {
+	cursor: pointer;
+}
+
+.neo-board i {
+	font-size: 18px;
+	color: #0000006e;
+}
+
+.neo-board .is-add-card {
+	display: flex;
+	padding: 6px 4px 6px;
+}
+
+.neo-board .is-add-card:hover {
+	background: #c2c5cadb;
+	cursor: pointer;
+}
+
+.neo-board span {
+	color: #0000006e;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.neo-board .task-card {
+	background-color: white;
+	border-radius: 4px;
+	padding: 6px 8px;
+	font-size: 14px;
+	color: #000000c4;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.09);
+	transition: 0.3s;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.neo-board .task-card textarea {
+	width: 100%;
+	border: none;
+	resize: none;
+}
